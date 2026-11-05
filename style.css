@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
 }
 
+/* HEADER */
 .header {
   background: #24170f;
   color: white;
@@ -47,6 +48,7 @@ nav a:hover {
   color: #f5bd70;
 }
 
+/* HOME */
 .hero {
   min-height: 540px;
   display: flex;
@@ -93,6 +95,7 @@ nav a:hover {
   background: #965b25;
 }
 
+/* GENERAL SECTIONS */
 .section {
   padding: 75px 8%;
   text-align: center;
@@ -110,6 +113,7 @@ nav a:hover {
   color: #6c625b;
 }
 
+/* MENU */
 .menu {
   background: #f5eadc;
 }
@@ -126,6 +130,11 @@ nav a:hover {
   padding: 28px 18px;
   border-radius: 12px;
   box-shadow: 0 5px 20px #00000010;
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
 }
 
 .menu-icon {
@@ -142,35 +151,43 @@ nav a:hover {
   font-size: 14px;
 }
 
+/* GALLERY */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 22px;
   margin-top: 30px;
 }
 
-.gallery-grid div {
-  min-height: 180px;
-  background: #f2dfcd;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 55px;
+.gallery-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px #00000012;
+  transition: transform 0.3s;
 }
 
-.gallery-grid span {
+.gallery-card:hover {
+  transform: translateY(-6px);
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.gallery-card span {
+  display: block;
+  padding: 15px;
   font-size: 17px;
   font-weight: bold;
 }
 
+/* CONTACT */
 .contact {
   background: #f5eadc;
-}
-
-.contact .btn {
-  margin-top: 25px;
 }
 
 .note {
@@ -178,6 +195,7 @@ nav a:hover {
   margin-top: 18px !important;
 }
 
+/* FOOTER */
 footer {
   background: #24170f;
   color: white;
@@ -186,12 +204,18 @@ footer {
   font-size: 14px;
 }
 
+/* TABLET */
 @media (max-width: 800px) {
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+/* MOBILE */
 @media (max-width: 550px) {
   .header {
     justify-content: center;
