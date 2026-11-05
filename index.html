@@ -1,13 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Royal Cafe - Fresh food, delicious taste and a wonderful experience.">
+  <meta name="description" content="Royal Cafe - Fresh food, delicious taste and happy moments.">
   <title>Royal Cafe | Fresh Taste, Happy Moments</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 15px;
+      display: block;
+    }
+
+    .gallery-grid span {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      padding: 12px;
+    }
+  </style>
 </head>
+
 <body>
 
   <header class="header">
@@ -33,28 +57,36 @@
   <section class="about section" id="about">
     <p class="tagline">OUR STORY</p>
     <h2>About Royal Cafe</h2>
-    <p>Welcome to Royal Cafe! We believe that great food brings people together. Enjoy a welcoming atmosphere, tasty dishes and refreshing drinks.</p>
+    <p>
+      Welcome to Royal Cafe! We believe that great food brings
+      people together. Enjoy a welcoming atmosphere, tasty dishes
+      and refreshing drinks.
+    </p>
   </section>
 
   <section class="menu section" id="menu">
     <p class="tagline">WHAT WE SERVE</p>
     <h2>Our Popular Menu</h2>
+
     <div class="menu-grid">
       <div class="menu-card">
         <div class="menu-icon">🍕</div>
         <h3>Delicious Pizza</h3>
         <p>Freshly prepared and full of flavour.</p>
       </div>
+
       <div class="menu-card">
         <div class="menu-icon">🍔</div>
         <h3>Classic Burger</h3>
         <p>A tasty favourite for every food lover.</p>
       </div>
+
       <div class="menu-card">
         <div class="menu-icon">☕</div>
         <h3>Hot Coffee</h3>
         <p>Enjoy a warm and refreshing cup.</p>
       </div>
+
       <div class="menu-card">
         <div class="menu-icon">🍰</div>
         <h3>Sweet Desserts</h3>
@@ -66,10 +98,22 @@
   <section class="gallery section" id="gallery">
     <p class="tagline">A LITTLE LOOK</p>
     <h2>Our Food Gallery</h2>
+
     <div class="gallery-grid">
-      <div>🍕<span>Pizza</span></div>
-      <div>🍔<span>Burger</span></div>
-      <div>☕<span>Coffee</span></div>
+      <div>
+        <img src="amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg" alt="Royal Cafe food">
+        <span>Delicious Food</span>
+      </div>
+
+      <div>
+        <img src="jason-leung-pol7DelFivA-unsplash.jpg" alt="Cafe special dish">
+        <span>Our Special Dish</span>
+      </div>
+
+      <div>
+        <img src="zaid-hussain-sayed-HGPInmepMAA-unsplash.jpg" alt="Fresh cafe treat">
+        <span>Fresh & Tasty</span>
+      </div>
     </div>
   </section>
 
@@ -77,8 +121,9 @@
     <p class="tagline">COME VISIT US</p>
     <h2>Contact Royal Cafe</h2>
     <p>Have a question or want to know more? Get in touch with us.</p>
-    <a class="btn" href="https://wa.me/910000000000" target="_blank" rel="noopener">WhatsApp Us</a>
-    <p class="note">Demo website: replace this sample WhatsApp number with the cafe's real business number before publishing.</p>
+    <p class="note">
+      Demo website: Add the real cafe contact details before publishing.
+    </p>
   </section>
 
   <footer>
@@ -87,5 +132,6 @@
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
