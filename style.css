@@ -244,3 +244,28 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.booking {
+  background: #fffaf3;
+}
+
+#bookingForm {
+  max-width: 500px;
+  margin: 25px auto 0;
+  display: grid;
+  gap: 15px;
+}
+
+#bookingForm input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d8c4b4;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#bookingForm button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
