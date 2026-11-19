@@ -4,212 +4,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Royal Cafe - Enjoy delicious food, fresh coffee and happy moments.">
-  <title>Royal Cafe | Fresh Food & Coffee</title>
+  <meta name="description" content="Royal Cafe — a premium dining experience with delicious food, handcrafted drinks and memorable moments.">
+  <title>Royal Cafe | Taste The Royal Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="topbar">A ROYAL EXPERIENCE • MADE WITH LOVE • SERVED FRESH</div>
 
-  <!-- HEADER -->
-  <header>
-    <nav class="navbar">
-      <h2 class="logo">Royal Cafe ☕</h2>
-
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#booking">Booking</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="header">
+    <a href="#home" class="logo"><span>R</span> ROYAL CAFE</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <a href="#reservation" class="header-btn">Book a Table ↗</a>
   </header>
 
-  <!-- HOME -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <p class="tagline">WELCOME TO ROYAL CAFE</p>
-      <h1>Fresh Taste, Happy Moments</h1>
-      <p>Enjoy delicious food, fresh coffee and beautiful moments.</p>
-      <a href="#menu" class="btn">Explore Menu</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about section" id="about">
-    <h2>About Our Cafe</h2>
-    <p>
-      Welcome to Royal Cafe! We serve delicious food and refreshing drinks
-      in a warm and comfortable atmosphere. Visit us and enjoy every moment.
-    </p>
-  </section>
-
-  <!-- MENU -->
-<section class="menu section" id="menu">
-  <p class="menu-tag">TASTE THE DIFFERENCE</p>
-  <h2>Our Special Menu</h2>
-  <p class="section-description">
-    Fresh ingredients, delicious flavours and unforgettable taste.
-  </p>
-
-  <div class="menu-grid">
-
-    <div class="menu-card">
-      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85" alt="Classic Burger">
-      <div class="menu-info">
-        <h3>Classic Burger</h3>
-        <p>Juicy burger with fresh vegetables and cheese.</p>
-        <span class="price">₹149</span>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <span class="eyebrow">WELCOME TO ROYAL CAFE</span>
+        <h1>Where Every Bite<br>Feels <em>Royal.</em></h1>
+        <p>Discover unforgettable flavours, warm hospitality and a dining experience made for special moments.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-gold">Explore Our Menu ↗</a>
+          <a href="#about" class="btn btn-outline">Discover Our Story</a>
+        </div>
+        <div class="hero-bottom"><span>✦ FRESH INGREDIENTS</span><span>✦ BEAUTIFUL MOMENTS</span></div>
       </div>
-    </div>
+      <div class="hero-side-note">GOOD FOOD. GREAT COMPANY.</div>
+    </section>
 
-    <div class="menu-card">
-      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85" alt="Cheese Pizza">
-      <div class="menu-info">
-        <h3>Cheese Pizza</h3>
-        <p>Delicious pizza loaded with cheese.</p>
-        <span class="price">₹249</span>
+    <section class="intro section" id="about">
+      <div class="intro-image">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85" alt="Elegant restaurant dining setup">
+        <div class="image-label">THE ART OF DINING</div>
       </div>
-    </div>
-
-    <div class="menu-card">
-      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85" alt="Hot Coffee">
-      <div class="menu-info">
-        <h3>Hot Coffee</h3>
-        <p>Freshly prepared aromatic coffee.</p>
-        <span class="price">₹99</span>
+      <div class="intro-content">
+        <span class="eyebrow">OUR STORY</span>
+        <h2>A Place To<br><em>Slow Down.</em></h2>
+        <p>At Royal Cafe, we believe great food brings people together. Our menu celebrates delicious flavours, carefully selected ingredients and the joy of sharing a meal.</p>
+        <p>Whether it is a quick coffee, a family dinner or a celebration, every visit deserves to feel special.</p>
+        <a href="#menu" class="text-link">Discover the menu ↗</a>
+        <div class="signature"><span>R</span><div><strong>Royal Cafe</strong><small>Good food, beautiful memories.</small></div></div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
-
-
-  <!-- GALLERY -->
-  <section class="gallery section" id="gallery">
-    <h2>Our Food Gallery</h2>
-    <p class="section-description">
-      A little look at our delicious collection.
-    </p>
-
-    <div class="gallery-grid">
-
-      <div class="gallery-card">
-        <img
-          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
-          alt="Delicious Burger">
-        <h3>Delicious Burger</h3>
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <span class="eyebrow">A TASTE OF ROYALTY</span>
+        <h2>Our Signature <em>Menu.</em></h2>
+        <p>Made to be enjoyed. Created to be remembered.</p>
       </div>
-
-      <div class="gallery-card">
-        <img
-          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85"
-          alt="Fresh Pizza">
-        <h3>Fresh Pizza</h3>
+      <div class="menu-filters" id="menuFilters">
+        <button class="filter-btn active" data-category="All">All</button>
+        <button class="filter-btn" data-category="Starters">Starters</button>
+        <button class="filter-btn" data-category="Main Course">Main Course</button>
+        <button class="filter-btn" data-category="Pizza">Pizza</button>
+        <button class="filter-btn" data-category="Drinks">Drinks</button>
+        <button class="filter-btn" data-category="Desserts">Desserts</button>
       </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
 
-      <div class="gallery-card">
-        <img
-          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85"
-          alt="Fresh Coffee">
-        <h3>Fresh Coffee</h3>
+    <section class="quote-banner">
+      <div class="quote-overlay"></div>
+      <div class="quote-content">
+        <span>✦</span>
+        <h2>Good food is the<br>beginning of <em>happiness.</em></h2>
+        <p>Gather around. Taste something wonderful.</p>
+        <a href="#reservation" class="btn btn-gold">Plan Your Visit ↗</a>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- TABLE BOOKING -->
-  <section class="booking section" id="booking">
-    <h2>Book Your Table</h2>
-    <p>Reserve your table at Royal Cafe.</p>
-
-    <form id="bookingForm">
-
-      <input
-        type="text"
-        id="customerName"
-        placeholder="Your Name"
-        required>
-
-      <input
-        type="date"
-        id="bookingDate"
-        required>
-
-      <input
-        type="time"
-        id="bookingTime"
-        required>
-
-      <input
-        type="number"
-        id="guests"
-        placeholder="Number of Guests"
-        min="1"
-        max="20"
-        required>
-
-      <button type="submit" class="btn">Book Now</button>
-
-    </form>
-  </section>
-
-  <!-- CUSTOMER REVIEWS -->
-  <section class="reviews section" id="reviews">
-    <h2>What Our Customers Say</h2>
-    <p class="section-description">Sample customer feedback</p>
-
-    <div class="reviews-grid">
-
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p>"Delicious food and a lovely atmosphere!"</p>
-        <h3>Customer One</h3>
+    <section class="gallery-section section" id="gallery">
+      <div class="section-heading">
+        <span class="eyebrow">A GLIMPSE INSIDE</span>
+        <h2>The Royal <em>Atmosphere.</em></h2>
+        <p>Good flavours. Warm spaces. Unforgettable moments.</p>
       </div>
-
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p>"The coffee was amazing. Loved the experience!"</p>
-        <h3>Customer Two</h3>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85" alt="Restaurant interior" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=700&q=85" alt="Freshly prepared food" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=85" alt="Coffee being served" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=85" alt="Restaurant dining experience" loading="lazy">
       </div>
+    </section>
 
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p>"Great place to enjoy food with friends."</p>
-        <h3>Customer Three</h3>
+    <section class="reservation section" id="reservation">
+      <div class="reservation-info">
+        <span class="eyebrow">MAKE IT A SPECIAL DAY</span>
+        <h2>Your Table<br>Is <em>Waiting.</em></h2>
+        <p>Planning a dinner, a get-together or a special celebration? Send us an enquiry and our team can follow up with you.</p>
+        <div class="reservation-detail"><span>✦</span> A warm welcome awaits</div>
+        <div class="reservation-detail"><span>✦</span> Memorable dining moments</div>
       </div>
+      <form class="reservation-form" id="reservationForm">
+        <h3>Table Enquiry</h3>
+        <p>Share your preferred visit details.</p>
+        <label for="guestName">Your Name</label>
+        <input id="guestName" name="name" type="text" placeholder="Enter your name" required>
+        <label for="guestEmail">Email Address</label>
+        <input id="guestEmail" name="email" type="email" placeholder="Enter your email" required>
+        <div class="form-row">
+          <div><label for="visitDate">Preferred Date</label><input id="visitDate" name="date" type="date" required></div>
+          <div><label for="guestCount">Guests</label><select id="guestCount" name="guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></div>
+        </div>
+        <label for="guestMessage">Message (Optional)</label>
+        <textarea id="guestMessage" name="message" placeholder="Any special request?" rows="3"></textarea>
+        <button type="submit" class="btn btn-gold submit-btn">Send Enquiry ↗</button>
+        <small class="form-note">Demo enquiry form — it does not submit a real reservation.</small>
+      </form>
+    </section>
 
-    </div>
-  </section>
+    <section class="contact-strip" id="contact">
+      <div><span class="eyebrow">COME SAY HELLO</span><h2>Let's make it <em>memorable.</em></h2></div>
+      <a href="#reservation" class="btn btn-gold">Enquire Now ↗</a>
+    </section>
+  </main>
 
-  <!-- CONTACT -->
-  <section class="contact section" id="contact">
-    <h2>Contact Us</h2>
-    <p>We would love to hear from you!</p>
-    <p class="contact-detail">📍 Your City, India</p>
-    <p class="contact-detail">📞 Add Your Contact Number</p>
-    <a href="mailto:hello@royalcafe.com" class="btn">Email Us</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <h3>Royal Cafe ☕</h3>
-    <p>Fresh Taste • Happy Moments</p>
-    <p>© 2026 Royal Cafe. All Rights Reserved.</p>
+  <footer class="footer">
+    <a href="#home" class="logo"><span>R</span> ROYAL CAFE</a>
+    <p>Good food. Beautiful memories.</p>
+    <div class="footer-links"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <small>© <span id="year"></span> Royal Cafe. Demo website.</small>
   </footer>
 
-  <!-- WHATSAPP BUTTON -->
-  <a
-    href="https://wa.me/919999999999?text=Hello%20Royal%20Cafe"
-    class="whatsapp-btn"
-    target="_blank"
-    rel="noopener">
-    💬 WhatsApp Us
-  </a>
-
+  <div class="toast" id="toast" role="status"></div>
   <script src="script.js"></script>
-
 </body>
 </html>
